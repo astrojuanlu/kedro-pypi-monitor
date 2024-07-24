@@ -1,0 +1,12 @@
+pypi_kedro_raw:
+  type: kedro_pypi_monitor.datasets.PolarsBigQueryDataset
+  sql: >
+    SELECT
+      *
+    FROM
+      `bigquery-public-data.pypi.file_downloads`
+    WHERE
+      project = 'kedro'
+      AND TIMESTAMP("${runtime_params:start_date, ${globals:start_date}}") <= timestamp
+      AND timestamp < TIMESTAMP("${runtime_params:end_date, ${globals:end_date}}")
+  credentials: gbq_credentials
