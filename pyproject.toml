@@ -1,0 +1,24 @@
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project]
+name = "kedro-pypi-monitor"
+version = "0.1.0"
+description = "Monitor for PyPI downloads of Kedro"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "kedro>=0.19.6",
+]
+authors = [
+    {name = "Juan Luis Cano Rodríguez", email = "juan_luis_cano@mckinsey.com"},
+]
+
+[tool.pdm]
+distribution = true
+
+[tool.kedro]
+project_name = "kedro-pypi-monitor"
+package_name = "kedro_pypi_monitor"
+kedro_init_version = "0.19.6"
