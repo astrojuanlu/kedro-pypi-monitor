@@ -12,6 +12,7 @@ dependencies = [
   "google-cloud-bigquery",
   "google-cloud-bigquery-storage",
   "kedro>=0.19.6",
+  "kedro-datasets[polars]",
   "polars>=1.0",
   "pyarrow",
 ]
