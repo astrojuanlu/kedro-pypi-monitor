@@ -9,7 +9,11 @@ description = "Monitor for PyPI downloads of Kedro"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+  "google-cloud-bigquery",
+  "google-cloud-bigquery-storage",
   "kedro>=0.19.6",
+  "polars>=1.0",
+  "pyarrow",
 ]
 authors = [
     {name = "Juan Luis Cano Rodríguez", email = "juan_luis_cano@mckinsey.com"},
