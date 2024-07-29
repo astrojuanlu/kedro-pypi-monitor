@@ -1,10 +1,11 @@
-import typing as t
-from kedro.io import AbstractDataset
-import polars as pl
-from google.cloud import bigquery
+import contextlib
 import logging
 import os
-import contextlib
+import typing as t
+
+import polars as pl
+from google.cloud import bigquery
+from kedro.io import AbstractDataset
 
 logger = logging.getLogger()
 

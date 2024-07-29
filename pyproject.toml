@@ -30,3 +30,16 @@ source = "scm"
 project_name = "kedro-pypi-monitor"
 package_name = "kedro_pypi_monitor"
 kedro_init_version = "0.19.6"
+
+[tool.ruff]
+show-fixes = true
+
+[tool.ruff.lint]
+select = [
+    "F",  # Pyflakes
+    "E",  # Pycodestyle
+    "W",  # Pycodestyle
+    "UP",  # pyupgrade
+    "I",  # isort
+    "PL",  # Pylint
+]
