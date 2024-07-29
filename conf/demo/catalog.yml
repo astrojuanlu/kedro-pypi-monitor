@@ -10,7 +10,6 @@ pypi_kedro_raw:
       AND TIMESTAMP("${runtime_params:start_date, ${globals:start_date}}") <= timestamp
       AND timestamp < TIMESTAMP("${runtime_params:end_date, ${globals:end_date}}")
     LIMIT 5
-  credentials: gbq_credentials
 
 pypi_kedro:
   type: polars.EagerPolarsDataset

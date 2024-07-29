@@ -39,7 +39,10 @@ class PolarsBigQueryDataset(AbstractDataset):
     def __init__(self, sql: str, credentials: dict[str, t.Any] | None = None):
         self._sql = sql
 
-        self._client = bigquery.Client.from_service_account_info(credentials)
+        if credentials is not None:
+            self._client = bigquery.Client.from_service_account_info(credentials)
+        else:
+            self._client = bigquery.Client()
 
     def _load(self):
         query_job = self._client.query(self._sql)
