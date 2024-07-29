@@ -166,4 +166,5 @@ conf/local/**
 !conf/local/.gitkeep
 conf/**/*credentials*
 
-data/
+data/*
+!data/00_demo/
