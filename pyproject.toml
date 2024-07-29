@@ -6,7 +6,7 @@ build-backend = "pdm.backend"
 name = "kedro-pypi-monitor"
 description = "Monitor for PyPI downloads of Kedro"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.9"
 dependencies = [
   "google-cloud-bigquery",
   "google-cloud-bigquery-storage",
