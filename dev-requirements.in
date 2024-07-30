@@ -1,7 +1,6 @@
 -c requirements.txt
 
--e .
-
 ruff
 ipython
 ipykernel
+kedro-viz
