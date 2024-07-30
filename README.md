@@ -3,6 +3,12 @@
 ## Installation
 
 ```
+$ uv pip install -r requirements.txt -r dev-requirements.txt
+```
+
+Or, with plain `pip`:
+
+```
 $ pip install -r requirements.txt -r dev-requirements.txt
 ```
 
