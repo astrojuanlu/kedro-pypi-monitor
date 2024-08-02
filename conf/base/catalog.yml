@@ -9,4 +9,3 @@ pypi_kedro_raw:
       project = 'kedro'
       AND TIMESTAMP("${runtime_params:start_date, ${globals:start_date}}") <= timestamp
       AND timestamp < TIMESTAMP("${runtime_params:end_date, ${globals:end_date}}")
-  credentials: gbq_credentials
