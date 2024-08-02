@@ -1,8 +1,3 @@
-"""
-This is a boilerplate pipeline 'data_processing'
-generated using Kedro 0.19.6
-"""
-
 import polars as pl
 
 TARGET_COLUMNS = [

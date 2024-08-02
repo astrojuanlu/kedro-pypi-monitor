@@ -11,12 +11,7 @@ pypi_kedro_raw:
       AND timestamp < TIMESTAMP("${runtime_params:end_date, ${globals:end_date}}")
     LIMIT 5
 
-pypi_kedro_demo:
-  type: polars.EagerPolarsDataset
-  file_format: csv
-  filepath: data/00_demo/pypi_kedro_demo.csv
-
-pypi_kedro:
+pypi_kedro_unnested:
   type: polars.EagerPolarsDataset
   file_format: parquet
-  filepath: data/02_intermediate/pypi_kedro.parquet
+  filepath: data/00_demo/pypi_kedro_demo.pq

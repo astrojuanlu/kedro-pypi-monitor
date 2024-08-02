@@ -1,6 +1,0 @@
-timestamp,project_name,version,major_version,type,python,major_python,cpu
-2024-07-01T23:32:58.000000+0000,kedro,0.17.7,0.17,bdist_wheel,3.8.5,3.8,x86_64
-2024-07-01T23:33:01.000000+0000,kedro,0.17.7,0.17,bdist_wheel,3.8.5,3.8,x86_64
-2024-07-01T23:30:20.000000+0000,kedro,0.17.7,0.17,bdist_wheel,3.8.5,3.8,x86_64
-2024-07-01T23:33:48.000000+0000,kedro,0.17.7,0.17,bdist_wheel,3.8.5,3.8,x86_64
-2024-07-01T23:21:22.000000+0000,kedro,0.18.0,0.18,bdist_wheel,3.8.15,3.8,x86_64

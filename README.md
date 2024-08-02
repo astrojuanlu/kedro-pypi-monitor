@@ -97,20 +97,20 @@ $ export GOOGLE_APPLICATION_CREDENTIALS=kedro-pypi-stats-xxx.json
 To test that the code works, run the demo pipeline:
 
 ```bash
-$ KEDRO_ENV=demo kedro run --pipeline fetch_demo
-[07/29/24 13:22:40] INFO     Kedro project kedro-pypi-monitor                                          session.py:324
-[07/29/24 13:22:43] INFO     Using synchronous mode for loading and saving data. Use the      sequential_runner.py:64
-                             --async flag for potential performance gains.
-                             https://docs.kedro.org/en/stable/nodes_and_pipelines/run_a_pipel
-                             ine.html#load-and-save-asynchronously
-                    INFO     Loading data from pypi_kedro_raw (PolarsBigQueryDataset)...          data_catalog.py:508
-[07/29/24 13:22:47] INFO     Running node: unnest_data([pypi_kedro_raw]) -> [pypi_kedro_unnested]         node.py:361
-                    INFO     Saving data to pypi_kedro_unnested (MemoryDataset)...                data_catalog.py:550
-                    INFO     Completed 1 out of 2 tasks                                       sequential_runner.py:90
-                    INFO     Loading data from pypi_kedro_unnested (MemoryDataset)...             data_catalog.py:508
-                    INFO     Running node: exclude_nested_dtypes([pypi_kedro_unnested]) ->                node.py:361
-                             [pypi_kedro_demo]
-                    INFO     Saving data to pypi_kedro_demo (EagerPolarsDataset)...               data_catalog.py:550
-                    INFO     Completed 2 out of 2 tasks                                       sequential_runner.py:90
-                    INFO     Pipeline execution completed successfully.                                 runner.py:119
+$ KEDRO_ENV=demo kedro run --pipeline fetch_kedro_data
+[08/02/24 08:43:25] INFO     Kedro project kedro-pypi-monitor                  session.py:324
+[08/02/24 08:43:29] INFO     Using synchronous mode for loading and   sequential_runner.py:64
+                             saving data. Use the --async flag for
+                             potential performance gains.
+                             https://docs.kedro.org/en/stable/nodes_a
+                             nd_pipelines/run_a_pipeline.html#load-an
+                             d-save-asynchronously
+                    INFO     Loading data from pypi_kedro_raw             data_catalog.py:508
+                             (PolarsBigQueryDataset)...
+[08/02/24 08:43:33] INFO     Running node: unnest_data([pypi_kedro_raw]) ->       node.py:361
+                             [pypi_kedro_unnested]
+                    INFO     Saving data to pypi_kedro_unnested           data_catalog.py:550
+                             (EagerPolarsDataset)...
+                    INFO     Completed 1 out of 1 tasks               sequential_runner.py:90
+                    INFO     Pipeline execution completed successfully.         runner.py:119
 ```
